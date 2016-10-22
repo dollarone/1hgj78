@@ -23,11 +23,12 @@ PlatformerGame.Preload.prototype = {
     this.game.load.audio('splash', 'assets/audio/onehourgamejamsplash.ogg');
     this.game.load.audio('music', 'assets/audio/coconut.ogg');
     this.game.load.audio('yay', 'assets/audio/yay.mp3');
+    this.game.load.audio('dollar', 'assets/audio/liamlimedollaroneprod.ogg');
 
   },
   create: function() {
-    var colour = "eee";
+    var colour = "abc";
     var timeout = 2;
-    this.state.start('Game', true, false, colour, timeout);
+    this.state.start('Logo', true, false, colour, timeout);
   }
 };

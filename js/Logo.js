@@ -15,9 +15,13 @@ PlatformerGame.Logo.prototype = {
 
     this.platforms = this.game.add.group();
 
-    logo_top_x = 5;
-    logo_top_y = 110;
+    logo_top_x = 205;
+    logo_top_y = 170;
     tile_space = 17;
+
+    this.dollar = this.game.add.audio('dollar');
+    this.dollar.play();
+
 
     this.createTile(logo_top_x+tile_space*4, logo_top_y+tile_space*0, 2);
     this.createTile(logo_top_x+tile_space*8, logo_top_y+tile_space*0, 2);
